@@ -1,1 +1,28 @@
-<p>add-resto works!</p>
+<h1>Add new Restaurants</h1>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Your Data has been entered.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="addResto" (ngSubmit)=collectResto()>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" class="form-control" formControlName="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+      
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+     
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Address</label>
+        <input type="text" class="form-control" formControlName="address" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+        
+      </div>
+    
+    <button type="submit" class="btn btn-primary" style="margin-top: 2%;">Submit</button>
+  </form>

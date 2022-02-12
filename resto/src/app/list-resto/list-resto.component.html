@@ -1,8 +1,22 @@
-<p>list-resto works!</p>
-<ul>
-    <li *ngFor="let item of collection">
-    {{item.title}}
-    {{item.id}}
-    {{item.author}}
-    </li>
-</ul>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection">
+        <th scope="row" >{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.email}}</td>
+      </tr>
+      
+     
+    </tbody>
+  </table>

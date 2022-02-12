@@ -2,28 +2,39 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Maheshwari Restaurant",
+      "address": "New Ring Road Kunhari",
+      "email": "maheshwari@gmail.com"
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Al Zaika Restaurant",
+      "address": "Keshoraipatan, gumapura",
+      "email": "AlZaika@gmail.com"
     },
     {
       "id": 3,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Behrouz Biryani",
+      "address": "Near Thermal Colony",
+      "email": "Behrouz_biryani@gmail.com"
     },
     {
-      "id": 4,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Second Wife Restaurant",
+      "email": "secondsWife@gmail.com",
+      "address": "Secondary address",
+      "id": 4
     },
     {
-      "id": 5,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Helllo",
+      "email": "test123@gmail.com",
+      "address": "bloacker@address.com",
+      "id": 5
+    },
+    {
+      "name": "Melbourne Restaurant",
+      "email": "Melbourne@gmail.com",
+      "address": "Malhousie@gmail.com",
+      "id": 6
     }
   ],
   "comments": [
