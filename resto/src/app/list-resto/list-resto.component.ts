@@ -9,10 +9,15 @@ import { RestoService } from '../resto.service';
 export class ListRestoComponent implements OnInit {
 
   constructor(private resto:RestoService) { }
-
+  collection:any;
   ngOnInit(): void {
 
-    this.resto.getList();
+    
+    this.resto.getList().subscribe((result)=>{
+       
+      this.collection=result;
+      console.warn(result);
+    })
 
   }
 

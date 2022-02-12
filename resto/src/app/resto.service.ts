@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestoService {
 
-  constructor() { }
+  url="http://localhost:3000/posts";
+
+  constructor(private http:HttpClient) { }
 
   getList()
   {
-    console.log("data is being called");
-    return "data list here";
+   
+    return this.http.get(this.url);
   }
 }
